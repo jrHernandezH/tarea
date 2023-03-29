@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="spa">
+
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="input">
+            <button onclick="clearInput()">CE</button>
+        </div>
+        <div class="buttons">
+            <button onclick="addToInput('7')">7</button>
+            <button onclick="addToInput('8')">8</button>
+            <button onclick="addToInput('9')">9</button>
+            <button onclick="addToInput('/')">÷</button>
+            <button onclick="addToInput('4')">4</button>
+            <button onclick="addToInput('5')">5</button>
+            <button onclick="addToInput('6')">6</button>
+            <button onclick="addToInput('*')">x</button>
+            <button onclick="addToInput('1')">1</button>
+            <button onclick="addToInput('2')">2</button>
+            <button onclick="addToInput('3')">3</button>
+            <button onclick="addToInput('-')">-</button>
+            <button onclick="addToInput('0')">0</button>
+            <button onclick="addToInput('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="addToInput('+')">+</button>
+        </div>
+    </div>
+    <script src="./manejo.js"></script>
+    <div id="return">
+        <a href="../principal/index.html">
+            <picture>
+                <source>
+                <img src="./right-left-solid.svg" alt="return" id="regresar">
+            </picture>
+        </a>
+    </div>
+</body>
+
+</html>

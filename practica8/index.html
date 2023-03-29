@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistencias</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">cuatro bandas</a>
+            <a href="./cincoBandas.html">cinco bandas</a>
+            <a href="./seisbandas.html">seis bandas</a>
+        </nav>
+    </header>
+    <div id="producto1">
+        <div class="tituloDiv">
+            <h3>resistencia de 4 bandas</h3>
+        </div>
+        <section class="contenidoDiv">
+            <div class="entrada">
+                <label for="banda1">Banda 1</label>
+                <select id="banda1" onchange="dibujar()">
+                    <option selected></option>
+                    <option value="0">Negro</option>
+                    <option value="1">Marron</option>
+                    <option value="2">Rojo</option>
+                    <option value="3">Naranja</option>
+                    <option value="4">Amarillo</option>
+                    <option value="5">Verde</option>
+                    <option value="6">Azul</option>
+                    <option value="7">Violeta</option>
+                    <option value="8">Gris</option>
+                    <option value="9">Blanco</option>
+                </select>
+                <label for="banda2">Banda2</label>
+                <select name="colores" id="banda2" onchange="dibujar()">
+                    <option selected></option>
+                    <option value="0">Negro</option>
+                    <option value="1">Marron</option>
+                    <option value="2">Rojo</option>
+                    <option value="3">Naranja</option>
+                    <option value="4">Amarillo</option>
+                    <option value="5">Verde</option>
+                    <option value="6">Azul</option>
+                    <option value="7">Violeta</option>
+                    <option value="8">Gris</option>
+                    <option value="9">Blanco</option>
+                </select>
+                <label for="multiplicador">Multiplicador</label>
+                <select name="colores" id="Multiplicador" onchange="dibujar()">
+                    <option selected></option>
+                    <option value="0">Negro</option>
+                    <option value="1">Marron</option>
+                    <option value="2">Rojo</option>
+                    <option value="3">Naranja</option>
+                    <option value="4">Amarillo</option>
+                    <option value="5">Verde</option>
+                    <option value="6">Azul</option>
+                    <option value="7">Violeta</option>
+                    <option value="8">Gris</option>
+                    <option value="9">Blanco</option>
+                    <option value="10">Oro</option>
+                    <option value="11">Plata</option>
+                </select>
+                <label for="tolerancia">Tolerancia</label>
+                <select name="colores" id="tolerancia" onchange="calcular()">
+                    <optgroup>
+                        <option selected></option>
+                        <option value="0">Marron</option>
+                        <option value="1">Rojo</option>
+                        <option value="2">Verde</option>
+                        <option value="3">Azul</option>
+                        <option value="4">Violeta</option>
+                        <option value="5">Gris</option>
+                        <option value="6">Oro</option>
+                        <option value="7">Plata</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div id="resultadoC">
+                <div id="resistencia">
+                    <div class="bandas" id="banda1Color"></div>
+                    <div class="bandas" id="banda2Color"></div>
+                    <div class="bandas" id="multiplicadorColor"></div>
+                    <div class="bandas" id="toleranciaColor"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="return">
+        <a href="../principal/index.html">
+            <picture>
+                <source>
+                <img src="./right-left-solid.svg" alt="return" id="regresar">
+            </picture>
+        </a>
+    </div>
+    <script src="./manejo.js"></script>
+</body>
+
+</html>

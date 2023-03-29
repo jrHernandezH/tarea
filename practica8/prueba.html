@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <li onclick="myFunction(1)">Producto1</li>
+    <li onclick="myFunction(2)">Producto2</li>
+    <li onclick="myFunction(3)">Producto3</li>
+    <div id="producto1" style="display:none;">
+        <div class="tituloDiv">
+            <h3>Producto1</h3>
+        </div>
+        <div class="contenidoDiv">
+            <p>Descripción producto1.</p>
+        </div>
+    </div>
+
+    <div id="producto2" style="display:none;">
+        <div class="tituloDiv">
+            <h3>Producto2</h3>
+        </div>
+        <div class="contenidoDiv">
+            <p>Descripción producto2.</p>
+        </div>
+    </div>
+
+    <div id="producto3" style="display:none;">
+        <div class="tituloDiv">
+            <h3>Producto3</h3>
+        </div>
+        <div class="contenidoDiv">
+            <p>Descripción producto3.</p>
+        </div>
+    </div>
+    <script>
+        function myFunction(idButton) {
+            var producto1 = document.getElementById('producto1');
+            var producto2 = document.getElementById('producto2');
+            var producto3 = document.getElementById('producto3');
+
+
+
+            switch (idButton) {
+                case 1:
+
+                    producto1.style.display = 'block';
+                    producto2.style.display = 'none';
+                    producto3.style.display = 'none';
+                    break;
+
+                case 2:
+                    producto1.style.display = 'none';
+                    producto2.style.display = 'block';
+                    producto3.style.display = 'none';
+                    break;
+
+                case 3:
+                    producto1.style.display = 'none';
+                    producto2.style.display = 'none';
+                    producto3.style.display = 'block';
+                    break;
+
+                default:
+                    alert("hay un problema: No existe el producto.")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
